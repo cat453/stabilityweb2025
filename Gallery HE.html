@@ -562,6 +562,15 @@ html {
             <br>
             <p class="copyright">@ LCBA | All Right Reserved</p>
         </footer>
-
+<script>
+            // Get the hamburger menu and the navbar
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            const navbar = document.getElementById('navbar');
+        
+            // Add an event listener to toggle the navbar visibility
+            hamburgerMenu.addEventListener('click', function() {
+                navbar.classList.toggle('open');
+            });
+        </script>
     </body>
 </html>
