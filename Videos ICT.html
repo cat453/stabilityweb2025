@@ -388,6 +388,32 @@ html {
                 font-size: 10px;
             }
         }
+            
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Change to one column on mobile screens */
+    .video-container {
+        grid-template-columns: 1fr;  /* One column on mobile */
+        padding: 0 10px;  /* Add some padding for better appearance */
+    }
+    
+    /* Adjust video item sizes */
+    .video-item {
+        max-width: 100%; /* Make video items use the full width */
+        padding: 10px 0;
+    }
+}
+
+/* Further responsiveness for very small screens */
+@media (max-width: 480px) {
+    .video-header {
+        font-size: 28px;  /* Smaller font size on very small screens */
+    }
+    
+    .video-description {
+        font-size: 14px;  /* Adjust description font size */
+    }
+}
         </style>
 
     <body>
