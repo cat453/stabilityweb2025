@@ -449,6 +449,29 @@ img {vertical-align: middle;}
 .navbar.open {
     display: block;  /* Show the navbar when "open" class is added */
 }
+            /* Mobile-specific styles */
+@media (max-width: 768px) {
+  .slideshow-container {
+    width: 100%; /* Ensure full width on mobile */
+    padding: 0 10px; /* Add some padding to the sides */
+  }
+
+  .mySlides img {
+    width: 100%; /* Ensure the image is full width */
+    height: auto; /* Keep aspect ratio intact */
+  }
+
+  .text {
+    font-size: 12px; /* Smaller text size for mobile */
+    padding: 6px 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 10px; /* Further reduce text size for very small screens */
+  }
+}
 </style>
 
     <body>
