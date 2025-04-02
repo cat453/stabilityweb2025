@@ -590,6 +590,14 @@ img {vertical-align: middle;}
           dots[slideIndex-1].className += " active";
           setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
+            // Get the hamburger menu and the navbar
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            const navbar = document.getElementById('navbar');
+        
+            // Add an event listener to toggle the navbar visibility
+            hamburgerMenu.addEventListener('click', function() {
+                navbar.classList.toggle('open');
+            });
         </script>
     </body>
 </html>
